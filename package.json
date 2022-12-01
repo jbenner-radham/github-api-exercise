@@ -1,0 +1,31 @@
+{
+  "name": "github-api-exercise",
+  "version": "0.0.0",
+  "description": "A GitHub API exercise.",
+  "keywords": [
+    "github",
+    "api",
+    "exercise"
+  ],
+  "license": "MIT",
+  "author": "James Benner <james.benner@gmail.com> (https://www.jamesbenner.com/)",
+  "type": "module",
+  "main": "lib/index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "lint": "eslint . --ext .js --ignore-path .gitignore",
+    "prepare": "husky install",
+    "test": "mocha"
+  },
+  "devDependencies": {
+    "chai": "^4.3.7",
+    "eslint": "^8.28.0",
+    "eslint-plugin-no-only-tests": "^3.1.0",
+    "husky": "^8.0.2",
+    "lint-staged": "^13.0.4",
+    "mocha": "^10.1.0",
+    "sort-package-json": "^2.1.0"
+  }
+}
