@@ -1,5 +1,7 @@
 ---
 root: true
+plugins:
+  - prettier
 extends:
   - eslint:recommended
 parserOptions:
@@ -60,6 +62,7 @@ rules:
     - error
     - destructuring: any
       ignoreReadBeforeAssign: false
+  prettier/prettier: error
   quote-props:
     - error
     - as-needed
