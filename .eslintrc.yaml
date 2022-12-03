@@ -104,4 +104,4 @@ overrides:
   - files:
     - '*.spec.js'
     env:
-      mocha: true
+      jest: true
