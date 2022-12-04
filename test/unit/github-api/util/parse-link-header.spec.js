@@ -28,26 +28,22 @@ describe('parseLinkHeader', () => {
     });
 
     describe('when passed nothing', () => {
-        it('returns an object with an undefined next property', () => {
-            expect(parseLinkHeader().next).toEqual(undefined);
+        it('returns an object with an empty string next property', () => {
+            expect(parseLinkHeader().next).toEqual('');
         });
 
-        it('returns an object with an undefined last property', () => {
-            expect(parseLinkHeader().last).toEqual(undefined);
+        it('returns an object with an empty string last property', () => {
+            expect(parseLinkHeader().last).toEqual('');
         });
     });
 
     describe('when passed an invalid link header', () => {
-        it('returns an object with an undefined next property', () => {
-            expect(parseLinkHeader('kjkeruuiv73hnddl#@-~').next).toEqual(
-                undefined
-            );
+        it('returns an object with an empty string next property', () => {
+            expect(parseLinkHeader('kjkeruuiv73hnddl#@-~').next).toEqual('');
         });
 
-        it('returns an object with an undefined last property', () => {
-            expect(parseLinkHeader('kjkeruuiv73hnddl#@-~').last).toEqual(
-                undefined
-            );
+        it('returns an object with an empty string last property', () => {
+            expect(parseLinkHeader('kjkeruuiv73hnddl#@-~').last).toEqual('');
         });
     });
 });
