@@ -17,7 +17,7 @@
   "scripts": {
     "lint": "eslint . --ext .js --ignore-path .gitignore",
     "prepare": "husky install",
-    "start": "node ./lib/index.js",
+    "start": "node ./lib/server.js",
     "test": "cross-env NODE_OPTIONS=--experimental-vm-modules jest",
     "test:watch": "npm run test -- --watchAll"
   },
