@@ -1,5 +1,8 @@
 import { describe, expect, it, jest } from '@jest/globals';
 import request from 'supertest';
+import logger from '../../lib/logger.js';
+
+logger.configure({ silent: true });
 
 jest.unstable_mockModule('../../lib/github-api/get-pull-requests.js', () => ({
     default: async () => {
