@@ -15,6 +15,7 @@
     "lib": "lib"
   },
   "scripts": {
+    "postinstall": "node ./scripts/postinstall.js",
     "lint": "eslint . --ext .js --ignore-path .gitignore",
     "prepare": "husky install",
     "start": "node ./lib/server.js",

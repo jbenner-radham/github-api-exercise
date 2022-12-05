@@ -66,10 +66,6 @@ rules:
   quote-props:
     - error
     - as-needed
-  quotes:
-    - error
-    - single
-    - allowTemplateLiterals: true
   semi: off
   sort-keys:
     - error
