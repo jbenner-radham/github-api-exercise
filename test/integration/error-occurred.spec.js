@@ -26,7 +26,7 @@ describe('API', () => {
                     expect(response.body).toEqual({
                         error: true,
                         message:
-                            'An error occured while processing your request.'
+                            'An error occurred while processing your request.'
                     });
                     done();
                 });
