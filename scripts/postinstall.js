@@ -21,7 +21,7 @@ try {
     );
 } catch (_) {
     console.error(
-        'Sorry, we tried to creat a new `.env` file for you but were unable to.'
+        'Sorry, we tried to create a new `.env` file for you but were unable to.'
     );
     process.exit(1);
 }
