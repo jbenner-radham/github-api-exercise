@@ -1,3 +1,4 @@
+import { describe, expect, it } from '@jest/globals';
 import parseLinkHeader from '../../../../lib/github-api/util/parse-link-header.js';
 
 const LINK_HEADER =

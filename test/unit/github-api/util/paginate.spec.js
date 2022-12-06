@@ -1,14 +1,16 @@
-import { jest } from '@jest/globals';
+import { beforeAll, describe, expect, it, jest } from '@jest/globals';
 import { Response } from 'node-fetch';
 import paginate from '../../../../lib/github-api/util/paginate.js';
-
-globalThis.fetch = jest.fn();
 
 const LINK_HEADER =
     '<https://api.github.com/user/repos?page=3&per_page=100>; rel="next",' +
     '  <https://api.github.com/user/repos?page=50&per_page=100>; rel="last"';
 
 describe('paginate', () => {
+    beforeAll(() => {
+        globalThis.fetch = jest.fn();
+    });
+
     it('is a function', () => {
         expect(typeof paginate).toEqual('function');
     });
