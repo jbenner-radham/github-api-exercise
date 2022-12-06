@@ -2,7 +2,7 @@ GitHub API Exercise
 ===================
 [![CI Status][CI BADGE]][CI PAGE]
 
-An excercise to expose GitHub PR info via an API **without** using [Octokit](https://github.com/octokit).
+An exercise to expose GitHub PR info via an API **without** using [Octokit](https://github.com/octokit).
 
 Getting Started
 ---------------
