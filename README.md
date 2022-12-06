@@ -50,10 +50,6 @@ Calling the API will result in a response like this:
 
 If there are no open pull requests you'll simply receive an empty array as your response.
 
-```json
-[]
-```
-
 Developing
 ----------
 If you want to start hacking on the codebase there are several aspects that we'll cover below that will help you along your way.
@@ -61,7 +57,7 @@ If you want to start hacking on the codebase there are several aspects that we'l
 ### Scripts
 * `npm run postinstall` - This script isn't meant to be run manually but if you choose to do so it will create a new `.env` file for you if you don't currently have one.
 * `npm run lint` - This script will lint your codebase with [ESLint](https://eslint.org/). It does not fix any lint errors encountered because that is covered by the pre-commit hook.
-* `npm run prepare` - This script isn't meant to be run manually. For reference it sets up the project Git hooks via [Husky](https://typicode.github.io/husky/).
+* `npm run prepare` - This script isn't meant to be run manually. For reference it sets up the project [Git hooks](https://git-scm.com/docs/githooks) via [Husky](https://typicode.github.io/husky/).
 * `npm start` - This starts the app.
 * `npm run start:watch` - Start the app but watch for file changes and reload when they occur. This is the preferred way to run the app during development.
 * `npm test` - This will run all the project tests.
@@ -69,7 +65,7 @@ If you want to start hacking on the codebase there are several aspects that we'l
 
 ### File Structure
 * `.github/` - This is where the [GitHub Actions](https://docs.github.com/en/actions) CI workflow code lives.
-* `.husky/` - The project Git hooks are located here.
+* `.husky/` - The project [Git hooks](https://git-scm.com/docs/githooks) are located here.
 * `lib/` - This is where all the app code lives.
 * `lib/github-api/` - All code that calls out to the GitHub API is here.
 * `lib/routes/` - The [Express](https://expressjs.com/) routes are located here.
@@ -83,7 +79,7 @@ If you want to start hacking on the codebase there are several aspects that we'l
 * `lib/logger.js` - The app level logger. Powered by [Winston](https://www.npmjs.com/package/winston).
 * `lib/server.js` - Merely imports the app object from `lib/index.js` and starts a server.
 * `.eslintrc.yaml` - The configuration file for [ESLint](https://eslint.org/).
-* `.lintstagedrc.yaml` - This configuration file specifies the processes to be run on staged files during the pre-commit Git hook.
+* `.lintstagedrc.yaml` - This configuration file specifies the processes to be run on staged files during the pre-commit [Git hook](https://git-scm.com/docs/githooks).
 * `.prettierrc.yaml` - A configuration file for [Prettier](https://prettier.io/), which is run via a [ESLint](https://eslint.org/) plugin.
 * `jest.config.mjs` - The configuration file for the [Jest](https://jestjs.io/) testing framework.
 
