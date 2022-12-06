@@ -1,18 +1,28 @@
 {
   "name": "github-api-exercise",
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "private": true,
   "description": "A GitHub API exercise.",
   "keywords": [
     "github",
     "api",
     "exercise"
   ],
+  "homepage": "https://github.com/jbenner-radham/github-api-exercise#readme",
+  "bugs": {
+    "url": "https://github.com/jbenner-radham/github-api-exercise/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jbenner-radham/github-api-exercise.git"
+  },
   "license": "MIT",
   "author": "James Benner <james.benner@gmail.com> (https://www.jamesbenner.com/)",
   "type": "module",
   "main": "lib/index.js",
   "directories": {
-    "lib": "lib"
+    "lib": "lib",
+    "test": "test"
   },
   "scripts": {
     "postinstall": "node ./scripts/postinstall.js",
@@ -43,5 +53,9 @@
     "prettier": "^2.8.0",
     "sort-package-json": "^2.1.0",
     "supertest": "^6.3.2"
+  },
+  "engines": {
+    "node": ">=16",
+    "npm": ">=8"
   }
 }
