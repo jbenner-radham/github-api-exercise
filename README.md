@@ -69,7 +69,7 @@ If you want to start hacking on the codebase there are several aspects that we'l
 
 ### File Structure
 * `.github/` - This is where the [GitHub Actions](https://docs.github.com/en/actions) CI workflow code lives.
-* `.husky/` - The project GitHooks are located here.
+* `.husky/` - The project Git hooks are located here.
 * `lib/` - This is where all the app code lives.
 * `lib/github-api/` - All code that calls out to the GitHub API is here.
 * `lib/routes/` - The [Express](https://expressjs.com/) routes are located here.
